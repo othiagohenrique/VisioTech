@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VISIO — Óculos Inteligentes de Visão Assistida</title>
+<meta name="description" content="Óculos inteligentes de visão assistida: tecnologia assistiva em desenvolvimento que transforma informação visual em orientação sonora.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<header class="header">
+  <a class="brand" href="#inicio" aria-label="VISIO — início"><img class="logo" src="https://res.cloudinary.com/rge1b0fm/image/upload/v1794969962/VISIO_arte_logo.webp" alt="VISIO" height="36" onerror="this.onerror=null;this.src='images/logo-visio.svg'"></a>
+  <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  <nav id="menu" class="menu" aria-label="Principal">
+    <a href="#produto">Produto</a><a href="#funcionalidades">Funcionalidades</a><a href="#specs">Especificações</a>
+    <a href="#como">Como funciona</a><a href="#seguranca">Segurança</a><a href="#faq">FAQ</a><a href="#contato">Contato</a>
+  </nav>
+  <button class="cart-btn" id="open-cart" aria-label="Abrir carrinho">Carrinho <span id="cart-count" class="badge" aria-live="polite">0</span></button>
+</header>
+
+<main id="conteudo">
+<section id="inicio" class="hero">
+  <div class="hero-text">
+    <p class="tag">Tecnologia assistiva · Em desenvolvimento</p>
+    <h1>Óculos Inteligentes de Visão Assistida</h1>
+    <p class="lead">Veja o mundo de uma nova maneira.</p>
+    <p>Câmeras, sensores e inteligência artificial que transformam o que está ao redor em orientação por voz, para mais autonomia no dia a dia de pessoas cegas ou com baixa visão.</p>
+    <div class="actions"><a class="btn primary" href="#produto">Conheça o produto</a><a class="btn ghost" href="#comprar">Comprar agora</a></div>
+  </div>
+  <div class="hero-img"><img src="https://res.cloudinary.com/rge1b0fm/image/upload/v1794970151/Visio_arte_do_inicio.webp" alt="Óculos inteligentes futuristas VISIO com lentes azuis e câmera frontal luminosa" onerror="this.onerror=null;this.src='images/oculos-hero.svg'"></div>
+</section>
+
+<section id="produto" class="section">
+  <h2>Informação visual, transformada em som</h2>
+  <p class="sub">Um dispositivo assistivo que combina hardware e IA para descrever o ambiente em tempo real. O objetivo: autonomia, acessibilidade e mobilidade.</p>
+  <ul class="chips">
+    <li>Câmeras inteligentes</li><li>Sensores de distância</li><li>Inteligência Artificial</li><li>Reconhecimento de objetos</li>
+    <li>Leitura de textos</li><li>Pessoas previamente cadastradas</li><li>Áudio direcional</li>
+  </ul>
+</section>
+
+<section id="funcionalidades" class="section">
+  <h2>Funcionalidades planejadas</h2>
+  <p class="sub">Recursos em desenvolvimento. Nenhum deles foi validado em testes finais.</p>
+  <div class="grid">
+    <article class="card"><span class="ico" aria-hidden="true">🧭</span><h3>Modo Navegação</h3><p>Identifica obstáculos, degraus, portas abertas, galhos e barreiras no caminho.</p><p class="quote">“Atenção: degrau abaixo, a 1,5 metro.”</p></article>
+    <article class="card"><span class="ico" aria-hidden="true">📖</span><h3>Modo Leitura</h3><p>Usa OCR para ler placas, cardápios, documentos, embalagens e telas digitais.</p></article>
+    <article class="card"><span class="ico" aria-hidden="true">🔍</span><h3>Reconhecimento de Objetos</h3><p>Ajuda a identificar pessoas, veículos, cadeiras, portas e outros elementos do ambiente.</p></article>
+    <article class="card"><span class="ico" aria-hidden="true">👤</span><h3>Reconhecimento de Pessoas</h3><p>Identifica pessoas cadastradas previamente pelo usuário, respeitando as configurações de privacidade.</p></article>
+    <article class="card"><span class="ico" aria-hidden="true">💵</span><h3>Cédulas e Produtos</h3><p>Auxilia na identificação de cédulas e na leitura de códigos de barras e informações de produtos.</p></article>
+    <article class="card"><span class="ico" aria-hidden="true">🔊</span><h3>Áudio Inteligente</h3><p>Converte o que foi identificado em voz clara, com possibilidade de áudio espacial para indicar a direção dos objetos.</p></article>
+  </div>
+</section>
+
+<section id="specs" class="section">
+  <h2>Especificações técnicas</h2>
+  <p class="sub">Características pretendidas para o produto. Valores sujeitos à validação durante o desenvolvimento.</p>
+  <dl class="specs">
+    <div><dt>Armação</dt><dd>Polímero TR-90 ou fibra de carbono</dd></div>
+    <div><dt>Peso pretendido</dt><dd>Inferior a 65 g</dd></div>
+    <div><dt>Câmera</dt><dd>Ultra-wide, 1080p, 30 FPS, campo de visão de até 120°</dd></div>
+    <div><dt>Processador</dt><dd>Solução com NPU para IA; possibilidade de ESP32-S3 no protótipo inicial</dd></div>
+    <div><dt>Sensores</dt><dd>ToF ou ultrassônicos</dd></div>
+    <div><dt>Alcance dos sensores</dt><dd>Aproximadamente 0,2 m a 4 m</dd></div>
+    <div><dt>IMU</dt><dd>Acelerômetro e giroscópio de 6 eixos</dd></div>
+    <div><dt>Áudio</dt><dd>Condução óssea ou alto-falantes direcionais Open-Ear</dd></div>
+    <div><dt>Bateria</dt><dd>Li-Po de 500 mAh a 800 mAh</dd></div>
+    <div><dt>Autonomia estimada</dt><dd>4 a 6 horas, conforme a configuração</dd></div>
+    <div><dt>Conectividade</dt><dd>Bluetooth 5.3 BLE e Wi-Fi 2,4/5 GHz</dd></div>
+    <div><dt>Proteção pretendida</dt><dd>Equivalente a IP54</dd></div>
+  </dl>
+</section>
+
+<section id="como" class="section">
+  <h2>Como funciona</h2>
+  <ol class="steps">
+    <li class="card"><h3>1. Captura</h3><p>Câmeras e sensores identificam informações ao redor do usuário.</p></li>
+    <li class="card"><h3>2. Processamento</h3><p>A IA analisa imagens, objetos, textos e distâncias.</p></li>
+    <li class="card"><h3>3. Orientação</h3><p>O dispositivo transforma os dados em alertas sonoros e orientações por áudio.</p></li>
+  </ol>
+</section>
+
+<section id="seguranca" class="section">
+  <h2>Segurança e acessibilidade</h2>
+  <div class="grid two">
+    <article class="card"><h3>Sons externos preservados</h3><p>O dispositivo foi pensado para manter os sons do ambiente perceptíveis. O áudio Open-Ear ou por condução óssea ajuda a preservar a percepção de buzinas, sirenes e outros sons.</p></article>
+    <article class="card"><h3>Privacidade de dados</h3><p>O processamento local é priorizado quando possível. Informações pessoais e biométricas devem ser protegidas, e o projeto considera os princípios da LGPD.</p></article>
+    <article class="card wide"><h3>Complementar, não substituto</h3><p>O dispositivo é complementar à bengala ou ao cão-guia e não substitui esses recursos.</p></article>
+  </div>
+</section>
+
+<section id="comprar" class="section">
+  <h2>Comprar</h2>
+  <div class="shop card">
+    <img src="images/oculos-hero.svg" alt="Óculos inteligentes de visão assistida, vista frontal conceitual">
+    <div>
+      <h3 data-cfg="productName">Óculos Inteligentes de Visão Assistida</h3>
+      <p>Tecnologia assistiva que descreve o ambiente por voz, em desenvolvimento para dar mais autonomia a pessoas cegas ou com baixa visão.</p>
+      <ul class="ticks"><li>Navegação com alertas de obstáculos</li><li>Leitura de textos e documentos</li><li>Áudio que preserva os sons externos</li><li>Complementar à bengala e ao cão-guia</li></ul>
+      <p class="price" id="price" aria-label="Preço"></p>
+      <div class="actions"><button class="btn primary" id="add">Adicionar ao carrinho</button><button class="btn ghost" id="buy">Comprar agora</button></div>
+      <dl class="info"><div><dt>Garantia</dt><dd data-cfg="warranty"></dd></div><div><dt>Entrega</dt><dd data-cfg="delivery"></dd></div><div><dt>Suporte</dt><dd data-cfg="support"></dd></div></dl>
+    </div>
+  </div>
+</section>
+
+<section id="depoimentos" class="section">
+  <h2>Impacto social</h2>
+  <p class="sub">Conteúdo demonstrativo: os textos abaixo são exemplos de layout, não depoimentos reais.</p>
+  <div class="grid">
+    <figure class="card"><span class="demo">Exemplo</span><blockquote>“Texto de exemplo sobre mais autonomia ao atravessar a rua.”</blockquote><figcaption>Nome do cliente — a definir</figcaption><div class="stars" aria-label="Avaliação demonstrativa">★★★★★</div></figure>
+    <figure class="card"><span class="demo">Exemplo</span><blockquote>“Texto de exemplo sobre ler um cardápio sem ajuda.”</blockquote><figcaption>Nome do cliente — a definir</figcaption><div class="stars" aria-label="Avaliação demonstrativa">★★★★★</div></figure>
+    <figure class="card"><span class="demo">Exemplo</span><blockquote>“Texto de exemplo sobre inclusão no trabalho e nos estudos.”</blockquote><figcaption>Nome do cliente — a definir</figcaption><div class="stars" aria-label="Avaliação demonstrativa">★★★★★</div></figure>
+  </div>
+</section>
+
+<section id="faq" class="section">
+  <h2>Perguntas frequentes</h2>
+  <div class="faq" id="faq-list">
+    <div class="q"><h3><button aria-expanded="false">Para quem os óculos foram desenvolvidos?</button></h3><div class="a" hidden><p>Para pessoas cegas ou com baixa visão que buscam mais autonomia, segurança e mobilidade.</p></div></div>
+    <div class="q"><h3><button aria-expanded="false">Como funciona a inteligência artificial?</button></h3><div class="a" hidden><p>Câmeras e sensores capturam o ambiente; a IA analisa imagens, objetos, textos e distâncias e transforma o resultado em orientações por áudio.</p></div></div>
+    <div class="q"><h3><button aria-expanded="false">Os óculos conseguem ler placas e documentos?</button></h3><div class="a" hidden><p>A leitura por OCR de placas, cardápios, documentos, embalagens e telas é uma funcionalidade planejada, ainda em validação.</p></div></div>
+    <div class="q"><h3><button aria-expanded="false">O dispositivo identifica obstáculos?</button></h3><div class="a" hidden><p>O Modo Navegação foi projetado para alertar sobre obstáculos, degraus, portas abertas e galhos, usando sensores ToF ou ultrassônicos com alcance aproximado de 0,2 m a 4 m. Ainda em validação.</p></div></div>
+    <div class="q"><h3><button aria-expanded="false">É possível reconhecer pessoas conhecidas?</button></h3><div class="a" hidden><p>Está previsto o reconhecimento apenas de pessoas cadastradas previamente pelo usuário, respeitando as configurações de privacidade.</p></div></div>
+    <div class="q"><h3><button aria-expanded="false">Os óculos substituem a bengala?</button></h3><div class="a" hidden><p>Não. O dispositivo é complementar à bengala ou ao cão-guia.</p></div></div>
+    <div class="q"><h3><button aria-expanded="false">Qual é a autonomia estimada da bateria?</button></h3><div class="a" hidden><p>A estimativa é de 4 a 6 horas, dependendo da configuração, com bateria Li-Po de 500 mAh a 800 mAh. Valor sujeito à validação.</p></div></div>
+    <div class="q"><h3><button aria-expanded="false">Como funciona a proteção dos dados pessoais?</button></h3><div class="a" hidden><p>O processamento local é priorizado quando possível, dados pessoais e biométricos devem ser protegidos e o projeto considera os princípios da LGPD.</p></div></div>
+  </div>
+</section>
+
+<section id="contato" class="section">
+  <h2>Fale com a equipe</h2>
+  <form id="contact" class="card form" novalidate>
+    <label for="nome">Nome</label><input id="nome" name="nome" autocomplete="name" required>
+    <label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" required>
+    <label for="msg">Mensagem</label><textarea id="msg" name="msg" rows="4" required></textarea>
+    <button class="btn primary" type="submit">Enviar mensagem</button>
+    <p id="form-status" role="status"></p>
+  </form>
+</section>
+</main>
+
+<footer class="footer">
+  <div><a class="brand" href="#inicio"><img class="logo" src="https://res.cloudinary.com/rge1b0fm/image/upload/v1794969962/VISIO_arte_logo.webp" alt="VISIO" height="36" onerror="this.onerror=null;this.src='images/logo-visio.svg'"></a>
+  <p>Tecnologia assistiva em desenvolvimento.</p></div>
+  <nav aria-label="Rodapé"><a href="#produto">Produto</a><a href="#funcionalidades">Funcionalidades</a><a href="#specs">Especificações</a><a href="#faq">FAQ</a></nav>
+  <div><p>E-mail: <a data-cfg-link="email"></a></p><p>Telefone: <span data-cfg="phone"></span></p>
+  <p class="social"><a data-cfg-link="instagram">Instagram</a> <a data-cfg-link="youtube">YouTube</a> <a data-cfg-link="linkedin">LinkedIn</a></p></div>
+  <p class="legal"><a href="#" data-modal="Política de privacidade">Política de privacidade</a> · <a href="#" data-modal="Termos de uso">Termos de uso</a> · © <span id="year"></span> <span data-cfg="brand"></span>. Todos os direitos reservados.</p>
+</footer>
+
+<div class="overlay" id="overlay" hidden></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" hidden>
+  <div class="drawer-head"><h2 id="cart-title">Seu carrinho</h2><button id="close-cart" aria-label="Fechar carrinho">✕</button></div>
+  <ul id="cart-items" class="cart-items"></ul>
+  <div class="summary" id="summary" aria-live="polite"></div>
+  <button class="btn primary full" id="checkout">Finalizar pedido (demonstração)</button>
+  <p class="note">Modo demonstrativo: nenhuma compra é realizada e nenhum dado de pagamento é solicitado.</p>
+</aside>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden><div class="card"><h2 id="modal-title"></h2><p id="modal-body"></p><button class="btn primary" id="modal-close">Fechar</button></div></div>
+
+<script src="script.js"></script>
+</body>
+</html>
